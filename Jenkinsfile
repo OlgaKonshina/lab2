@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Download Data'){
             steps {
-                 sh 'python3 scripts/data_creation.py'
+                 sh 'python3 data_creation.py'
             }
         }
         stage( 'Preprocess Data'){
