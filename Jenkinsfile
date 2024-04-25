@@ -13,17 +13,17 @@ pipeline{
         }
         stage( 'Preprocess Data'){
             steps{
-                sh 'python3 scripts/model_prep.py'
+                sh 'python3 model_prep.py'
             }
         }
         stage('Train Model'){
             steps{
-                sh 'python3 scripts/model.py'
+                sh 'python3 model.py'
             }
         }
         stage('Test Model'){
             steps{
-                sh 'python3 scripts/model_testing.py'
+                sh 'python3 model_testing.py'
             }
         }
     }
