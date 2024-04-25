@@ -3,7 +3,7 @@ pipeline{
 
     stages{
         stage('Setup Environment'){
-            steps{ sh 'echo "setting up environment..."'
+            steps{ sh 'echo requrements.txt'
              }
         }
         stage('Download Data'){
