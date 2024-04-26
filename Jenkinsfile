@@ -3,7 +3,7 @@ pipeline{
 
     stages{
         stage('Setup Environment'){
-            steps{ sh 'echo requrements.txt'
+            steps{ sh 'pip install -r requirements.txt'
              }
         }
         stage('Download Data'){
@@ -33,3 +33,4 @@ pipeline{
         }
     }
 }
+
