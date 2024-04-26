@@ -5,5 +5,5 @@ RUN apt-get update && \
 RUN python3 -m venv /opt/venv 
 ENV PATH="/opt/venv/bin:$PATH"
 RUN pip install --upgrade pip && \
-    pip install numpy pandas scikit-learn 
+    pip install numpy pandas scikit-learn pathlib opendatasets
 USER jenkins
