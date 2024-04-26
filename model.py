@@ -16,7 +16,7 @@ X_train, X_val, y_train, y_val = train_test_split(X, y,
                                                   random_state=73)
 model.fit(X_train, y_train)
 
-pickle.dump(model, open('/home/olga/MLOps/lab2/model.pkl', "wb"))  # сохраняем модель
+pickle.dump(model, open('model.pkl', "wb"))  # сохраняем модель
 
 print('Модель сохранена')
 prediction = model.predict(X_val)
