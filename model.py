@@ -5,9 +5,9 @@ from sklearn import metrics
 import pickle  # для сохранения модели
 
 model = RandomForestClassifier(max_features='log2', n_estimators=300, random_state=73)
-path = '/home/olga/MLOps/lab2/train/train_data.csv'
+#path = '/home/olga/MLOps/lab2/train/train_data.csv'
 
-df = data_preparation(path)
+df = data_preparation('train.csv')
 X, y = df.drop(columns=['target']), df['target']
 
 # разбиваем на тестовую и валидационную
